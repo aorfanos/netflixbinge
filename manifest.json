@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "netflixbinge",
+  "version": "0.1",
+
+  "description": "Presses continue watching and skips intro on Netflix",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["skipintro.js"]
+    }
+  ]
+
+}
